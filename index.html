@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMART CODING LAB ACADEMY</title>
+<style>
+:root{--bg:#080d1b;--panel:#111a2e;--panel2:#0d1426;--line:#243553;--text:#eef4ff;--muted:#9aaaca;--blue:#42c8ff;--purple:#9b7bff;--gold:#ffcf70;--green:#55e6b0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% 0%,#1b2351 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:10px 14px;background:linear-gradient(100deg,var(--blue),var(--purple));color:#07101e;font-weight:750}
+header{height:auto;min-height:72px;padding:16px 5%;display:flex;gap:14px;align-items:center;justify-content:space-between;border-bottom:1px solid #24314d;background:#080d1bd9;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}
+.brand{display:flex;gap:12px;align-items:center;font-weight:850;letter-spacing:.3px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--purple));display:grid;place-items:center;color:#07101e;font-weight:1000;font-size:20px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:2px}
+.wrap{max-width:1250px;margin:auto;padding:28px 5% 60px}.hero{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:28px;border:1px solid #2c3a60;border-radius:22px;background:linear-gradient(120deg,#152644,#14152f 65%,#1c1740);box-shadow:0 20px 60px #0003}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.08;margin:10px 0 14px;max-width:700px}.hero p{color:#bdc9e4;max-width:650px}.hero-badge{min-width:140px;text-align:center;border:1px solid #56658b;border-radius:18px;padding:20px;background:#0c1428}.hero-badge strong{display:block;font-size:32px;color:var(--gold)}.layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:22px;margin-top:24px}.side,.card{background:linear-gradient(160deg,#121c31,#0e1628);border:1px solid var(--line);border-radius:17px}.side{padding:13px;height:max-content}.nav{display:flex;width:100%;text-align:left;gap:11px;align-items:center;background:transparent;color:#b9c7e4;margin:3px 0;padding:12px;border-radius:10px;font-weight:600}.nav.active,.nav:hover{background:#202e4d;color:white}.nav.active{outline:1px solid #40547a}.side-label{color:#7385a9;font-size:10px;letter-spacing:1.7px;margin:17px 12px 5px}.main{min-width:0}.section-head{display:flex;justify-content:space-between;gap:12px;align-items:end;margin:2px 0 15px}.section-head h2{margin:0;font-size:23px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.course{padding:17px;position:relative;overflow:hidden;min-height:170px}.course .icon{font-size:25px}.course h3{margin:10px 0 4px}.course p{color:var(--muted);font-size:13px;margin:0 0 13px}.tag{font-size:11px;padding:4px 8px;border:1px solid #354563;border-radius:20px;color:#bfd0ef;display:inline-block}.progress{height:5px;background:#26334c;border-radius:5px;margin:10px 0}.progress span{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--blue),var(--purple))}.two-col{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(240px,.8fr);gap:14px;margin-top:18px}.pad{padding:18px}.pad h3{margin:0 0 10px}.editor{border:1px solid #293858;border-radius:12px;overflow:hidden;background:#080e1b}.editorbar{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#151f35;color:#c5d3ee;font-size:12px}.editor textarea{display:block;width:100%;min-height:190px;resize:vertical;background:#080e1b;color:#d5e8ff;border:0;padding:14px;outline:none;font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.secondary{background:#243553;color:#e8f0ff}.output{white-space:pre-wrap;min-height:48px;background:#070c16;border:1px solid #273650;border-radius:10px;padding:12px;margin-top:10px;color:var(--green);font:13px/1.5 ui-monospace,monospace}.quick{display:grid;gap:9px}.quick button{width:100%;text-align:left;background:#172540;color:#dce9ff;border:1px solid #2b3e61}.payment{margin-top:18px;border:1px solid #554a38;background:linear-gradient(120deg,#251f20,#17182b);border-radius:17px;padding:19px}.payment h3{margin:0 0 5px;color:var(--gold)}.payment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:13px 0}.payitem{background:#0e1424;border:1px solid #413d3d;padding:11px;border-radius:10px;overflow-wrap:anywhere}.payitem small{display:block;color:#aab4cb}.payitem strong{font-size:14px}.note{font-size:12px;color:#c3cce0}.lesson-list{display:grid;gap:10px}.lesson{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:13px;border:1px solid var(--line);border-radius:12px;background:#101a2d}.locked{color:var(--gold)}.hidden{display:none!important}footer{text-align:center;color:#7585a7;font-size:12px;margin-top:26px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.side{display:flex;overflow-x:auto;gap:4px}.side-label{display:none}.nav{white-space:nowrap;width:auto;flex:0 0 auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two-col{grid-template-columns:1fr}.hero-badge{display:none}}
+@media(max-width:520px){header{padding:12px 4%}.brand{font-size:13px}.wrap{padding:18px 4% 40px}.hero{padding:21px}.grid{grid-template-columns:1fr}.payment-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><div class="logo">&lt;/&gt;</div><div>SMART CODING LAB<small>ACADEMY · BUILD YOUR FUTURE</small></div></div>
+  <button onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">Unlock lessons · ₦5,000</button>
+</header>
+<div class="wrap">
+  <section class="hero">
+    <div><div class="eyebrow">Your future starts with one line of code</div><h1>Learn to code.<br><span style="color:var(--blue)">Build something real.</span></h1><p>Practical programming lessons for beginners. Learn step by step, practise in the playground, and turn your ideas into projects.</p><button onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">Explore courses →</button></div>
+    <div class="hero-badge"><strong>8+</strong><span class="muted">Learning paths</span><hr style="border-color:#34415f"><strong style="font-size:24px">∞</strong><span class="muted">Ideas to build</span></div>
+  </section>
+
+  <div class="layout">
+    <aside class="side">
+      <button class="nav active" data-target="dashboard">◈ Dashboard</button>
+      <button class="nav" data-target="courses">▤ My courses</button>
+      <button class="nav" data-target="playground">⌘ Coding playground</button>
+      <button class="nav" data-target="lessons">▣ Lessons</button>
+      <button class="nav" data-target="payment">◇ Unlock access</button>
+    </aside>
+    <main class="main">
+      <section id="dashboard">
+        <div class="section-head"><div><div class="eyebrow">Learning space</div><h2>Welcome, future developer 👋</h2></div><span class="tag">Beginner friendly</span></div>
+        <div class="grid" id="courses">
+          <article class="card course"><div class="icon">🐍</div><h3>Python</h3><p>Variables, decisions, loops, functions and mini-projects.</p><span class="tag">Beginner · 12 lessons</span></article>
+          <article class="card course"><div class="icon">🌐</div><h3>HTML & CSS</h3><p>Create web pages and style them for mobile and desktop.</p><span class="tag">Beginner · 10 lessons</span></article>
+          <article class="card course"><div class="icon">⚡</div><h3>JavaScript</h3><p>Make websites interactive with practical examples.</p><span class="tag">Beginner · 10 lessons</span></article>
+          <article class="card course"><div class="icon">🗄️</div><h3>SQL & databases</h3><p>Understand how apps store and retrieve information.</p><span class="tag">Coming soon</span></article>
+          <article class="card course"><div class="icon">🐙</div><h3>Git & GitHub</h3><p>Track code changes and learn project collaboration.</p><span class="tag">Coming soon</span></article>
+          <article class="card course"><div class="icon">🛠️</div><h3>Build projects</h3><p>Use what you learn to make useful mini-projects.</p><span class="tag">Project-based</span></article>
+        </div>
+        <div class="two-col">
+          <section class="card pad" id="playground"><h3>⌘ Try the coding playground</h3><p class="muted" style="margin-top:-5px;font-size:13px">Run HTML, CSS and JavaScript examples right in this browser.</p>
+            <div class="editor"><div class="editorbar"><span>index.html · Live preview</span><span>HTML / CSS / JS</span></div>
+              <textarea id="code" spellcheck="false"><h2>Hello, future developer! 🚀</h2>
+<p>My first webpage is working.</p>
+<button onclick="document.getElementById('message').textContent='You just ran JavaScript!'">Click me</button>
+<p id="message"></p>
+<style>
+  body { font-family: Arial; padding: 16px; color: #14213d; }
+  h2 { color: #6556d9; }
+  button { background: #6556d9; color: white; }
+</style></textarea>
+            </div>
+            <div class="actions"><button onclick="runCode()">▶ Run code</button><button class="secondary" onclick="resetCode()">Reset example</button></div>
+            <div id="output" class="output">Your preview will appear here when you tap Run code.</div>
+          </section>
+          <section class="card pad"><h3>⚡ Quick start</h3><div class="quick">
+            <button onclick="loadExample('html')">🌐 Load HTML example</button>
+            <button onclick="loadExample('js')">⚡ Load JavaScript example</button>
+            <button onclick="loadExample('python')">🐍 Load Python example</button>
+            <button onclick="document.getElementById('lessons').scrollIntoView({behavior:'smooth'})">📚 View starter lessons</button>
+          </div><p class="note" style="margin-top:13px">Note: this browser playground runs HTML/CSS/JavaScript. Python example text is for learning; running Python requires a Python runtime.</p></section>
+        </div>
+        <section class="payment" id="payment"><h3>🔐 Unlock the full learning library</h3><p>Pay the one-time access fee of <strong>₦5,000</strong> to request access to locked lessons.</p>
+          <div class="payment-grid"><div class="payitem"><small>Account number</small><strong>7015922520</strong></div><div class="payitem"><small>Bank / provider</small><strong>Moniepoint Business</strong></div><div class="payitem"><small>Account name</small><strong>Olikenyo Williams</strong></div></div>
+          <p class="note">After payment, contact the academy administrator and share your payment confirmation. This demo does not verify payments automatically or securely manage student accounts.</p>
+          <div class="actions"><button onclick="contactAdmin()">Request access</button><button class="secondary" onclick="copyAccount()">Copy account number</button></div><p id="paymsg" class="note" aria-live="polite"></p>
+        </section>
+      </section>
+      <section id="lessons" style="margin-top:22px"><div class="section-head"><div><div class="eyebrow">Start learning</div><h2>Starter lessons</h2></div></div>
+        <div class="lesson-list">
+          <div class="lesson"><div><strong>Lesson 1 · What is programming?</strong><div class="muted" style="font-size:13px">Free · Learn what code does and how programs follow instructions.</div></div><button class="secondary" onclick="showLesson(1)">Open lesson</button></div>
+          <div class="lesson"><div><strong>Lesson 2 · Your first HTML page</strong><div class="muted" style="font-size:13px">Free · Build a simple page with headings and paragraphs.</div></div><button class="secondary" onclick="showLesson(2)">Open lesson</button></div>
+          <div class="lesson"><div><strong>Lesson 3 · Variables and data</strong><div class="muted" style="font-size:13px">🔒 Included in full course access.</div></div><button onclick="document.getElementById('payment').scrollIntoView({behavior:'smooth'})">Unlock · ₦5,000</button></div>
+        </div><div id="lessonbody" class="card pad hidden" style="margin-top:12px"></div>
+      </section>
+    </main>
+  </div>
+  <footer>© SMART CODING LAB ACADEMY · Learn by building · This is a starter demo, not yet a secure production learning platform.</footer>
+</div>
+<script>
+const starter = document.getElementById('code');
+const original = starter.value;
+document.querySelectorAll('.nav').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.nav').forEach(n=>n.classList.remove('active'));btn.classList.add('active');
+ const target=document.getElementById(btn.dataset.target); if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+}));
+function runCode(){
+ const output=document.getElementById('output');
+ const html=starter.value;
+ const safeDoc='<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head><body>'+html+'</body></html>';
+ output.innerHTML='';
+ const frame=document.createElement('iframe');frame.title='Code preview';frame.style='width:100%;height:270px;border:0;border-radius:8px;background:white';frame.setAttribute('sandbox','allow-scripts');output.appendChild(frame);
+ frame.srcdoc=safeDoc;
+}
+function resetCode(){starter.value=original;document.getElementById('output').textContent='Example reset. Tap Run code to preview it.'}
+function loadExample(kind){
+ if(kind==='html') starter.value='<h1>My first website</h1>\\n<p>I am learning HTML.</p>\\n<style>body{font-family:Arial;padding:20px;color:#182848}h1{color:#6556d9}</style>';
+ if(kind==='js') starter.value='<h2>JavaScript counter</h2>\\n<p id="count">Count: 0</p>\\n<button onclick="n++;document.getElementById(\\'count\\').textContent=\\'Count: \\'+n">Add one</button>\\n<script>let n=0;<\\/script>';
+ if(kind==='python') starter.value='# Python example — learning text only\\nname = "Developer"\\nprint("Hello,", name)\\n\\n# Python does not run in this HTML-only playground.';
+ document.getElementById('playground').scrollIntoView({behavior:'smooth'});document.getElementById('output').textContent='Example loaded. Tap Run code for HTML/JavaScript. Python needs a Python runtime.';
+}
+function showLesson(n){
+ const box=document.getElementById('lessonbody');box.classList.remove('hidden');
+ box.innerHTML=n===1?'<h3>Lesson 1: What is programming?</h3><p>Programming is writing clear instructions that a computer can follow. A program can calculate numbers, control a device, or display a website.</p><p><strong>Try it:</strong> Think of a daily task and write its steps in order. Computers need instructions that are precise and unambiguous.</p>':'<h3>Lesson 2: Your first HTML page</h3><p>HTML describes the structure of a webpage. A heading uses <code>&lt;h1&gt;Your heading&lt;/h1&gt;</code>; a paragraph uses <code>&lt;p&gt;Your text&lt;/p&gt;</code>.</p><p><strong>Try it:</strong> Replace the text in the playground with your name and a short introduction, then tap Run code.</p>';
+ box.scrollIntoView({behavior:'smooth'});
+}
+function copyAccount(){
+ const acct='7015922520';
+ if(navigator.clipboard && navigator.clipboard.writeText){navigator.clipboard.writeText(acct).then(()=>document.getElementById('paymsg').textContent='Account number copied.').catch(()=>document.getElementById('paymsg').textContent='Account number: '+acct)}
+ else document.getElementById('paymsg').textContent='Account number: '+acct;
+}
+function contactAdmin(){
+ const message='Hello SMART CODING LAB ACADEMY, I have paid the ₦5,000 course access fee. Please advise me on the next step. I will provide payment confirmation.';
+ document.getElementById('paymsg').textContent=message+' (Add your official WhatsApp or email contact before publishing.)';
+}
+</script>
+</body>
+</html>
